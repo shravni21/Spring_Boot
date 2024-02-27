@@ -1,2 +1,5 @@
-package com.spring.springcoredemo;public interface Coach {
+package com.spring.springcoredemo;
+
+public interface Coach {
+    String getDailiyWorkout();
 }
