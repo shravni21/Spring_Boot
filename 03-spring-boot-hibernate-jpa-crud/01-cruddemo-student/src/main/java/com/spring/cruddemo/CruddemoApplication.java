@@ -2,6 +2,7 @@ package com.spring.cruddemo;
 
 import com.spring.cruddemo.dao.StudentDAO;
 import com.spring.cruddemo.entity.Student;
+import org.hibernate.sql.Update;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -29,9 +30,32 @@ public class CruddemoApplication {
 
 //            queryForStudents(studentDAO);
 
-            queryForStudentsByLastName(studentDAO);
+//            queryForStudentsByLastName(studentDAO);
 
+            UpdateStudent(studentDAO);
         };
+
+    }
+
+    private void UpdateStudent(StudentDAO studentDAO) {
+
+        // Retrieve student based on primary key
+        int StudentId = 1;
+        System.out.println("Getting student with id: " + StudentId);
+        Student myStudent = studentDAO.FIndbyId(StudentId);
+
+        // Change first name
+        System.out.println("Updating student....");
+        myStudent.setFirst_name("Shinchan");
+//        myStudent.setLast_name("Nohara");
+//        myStudent.setEmail("shiro@gmail.com");
+        studentDAO.Update(myStudent);
+
+        // update the student
+        studentDAO.Update(myStudent);
+
+        // display the updated student
+        System.out.println("Updated student: " + myStudent);
 
     }
 
