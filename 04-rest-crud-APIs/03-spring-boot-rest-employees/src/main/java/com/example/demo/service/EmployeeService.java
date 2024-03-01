@@ -1,12 +1,11 @@
-package com.example.demo.dao;
+package com.example.demo.service;
 
 import com.example.demo.entity.Employee;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 
-public interface EmployeeDAO {
+public interface EmployeeService {
     List<Employee> findAll();
 
     Employee FindById(int theId);
@@ -16,4 +15,3 @@ public interface EmployeeDAO {
     void deleteById(int theId);
 
 }
-
