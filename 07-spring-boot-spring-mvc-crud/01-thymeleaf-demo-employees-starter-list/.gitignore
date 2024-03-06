@@ -1,0 +1,13 @@
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+
+# Maven Wrapper
+mvnw
+mvnw.cmd
+
+# Other
+HELP.md
