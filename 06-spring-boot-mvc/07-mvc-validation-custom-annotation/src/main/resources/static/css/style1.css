@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.confirmation-message {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.confirmation-message h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.confirmation-message p {
+    margin-bottom: 10px;
+}
+
+.confirmation-message span {
+    font-weight: bold;
+    color: green;
+}
