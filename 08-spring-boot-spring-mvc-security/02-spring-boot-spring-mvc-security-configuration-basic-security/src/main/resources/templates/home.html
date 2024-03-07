@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>MVC-Security Company Home Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <h2>MVC-Security Company Home Page</h2>
+    <hr>
+
+    <!-- Image slider -->
+    <div class="slider-container">
+        <div class="slider">
+            <img src="/images/image1.jpg" alt="Image 1">
+            <img src="/images/image2.jpg" alt="Image 2">
+            <img src="/images/image3.jpg" alt="Image 3">
+            <!-- Add more images as needed -->
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+
+    <p>Welcome to the company home page.</p>
+</div>
+
+<script>
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slider img');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+
+    let counter = 0;
+    const slideWidth = slides[0].clientWidth;
+
+    nextBtn.addEventListener('click', () => {
+        counter++;
+        if (counter >= slides.length) {
+            counter = 0;
+        }
+        updateSliderPosition();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        counter--;
+        if (counter < 0) {
+            counter = slides.length - 1;
+        }
+        updateSliderPosition();
+    });
+
+    function updateSliderPosition() {
+        const offset = -counter * slideWidth;
+        slider.style.transition = 'transform 0.5s ease';
+        slider.style.transform = `translateX(${offset}px)`;
+
+        // Reset transition after animation completes
+        setTimeout(() => {
+            if (counter === 0 || counter === slides.length - 1) {
+                slider.style.transition = 'none';
+            }
+        }, 500);
+    }
+</script>
+</body>
+
+</html>

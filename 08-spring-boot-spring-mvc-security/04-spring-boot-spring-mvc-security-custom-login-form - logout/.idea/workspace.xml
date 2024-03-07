@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="91112c87-adc5-4073-a31a-746328c736b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../01-spring-boot-spring-mvc-security-default/src/main/java/com/springboot/mvc/demosecurity/controller/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-spring-boot-spring-mvc-security-default/src/main/resources/static/images/image1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-spring-boot-spring-mvc-security-default/src/main/resources/static/images/image2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-spring-boot-spring-mvc-security-default/src/main/resources/static/images/image3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-spring-boot-spring-mvc-security-default/src/main/resources/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../01-spring-boot-spring-mvc-security-default/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-spring-boot-spring-mvc-security-configuration-basic-security/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-spring-boot-spring-mvc-security-configuration-basic-security/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-spring-boot-spring-mvc-security-configuration-basic-security/src/main/java/com/springboot/mvc/demosecurity/DemoSecurityApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-spring-boot-spring-mvc-security-configuration-basic-security/src/main/java/com/springboot/mvc/demosecurity/controller/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-spring-boot-spring-mvc-security-configuration-basic-security/src/main/java/com/springboot/mvc/demosecurity/security/DemoSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-spring-boot-spring-mvc-security-configuration-basic-security/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-spring-boot-spring-mvc-security-configuration-basic-security/src/main/resources/static/images/image1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-spring-boot-spring-mvc-security-configuration-basic-security/src/main/resources/static/images/image2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-spring-boot-spring-mvc-security-configuration-basic-security/src/main/resources/static/images/image3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-spring-boot-spring-mvc-security-configuration-basic-security/src/main/resources/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-spring-boot-spring-mvc-security-configuration-basic-security/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02-spring-boot-spring-mvc-security-configuration-basic-security/src/test/java/com/springboot/mvc/demosecurity/DemoSecurityApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-spring-mvc-security-custom-login-form/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-spring-mvc-security-custom-login-form/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-spring-mvc-security-custom-login-form/src/main/java/com/springboot/mvc/demosecurity/DemoSecurityApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-spring-mvc-security-custom-login-form/src/main/java/com/springboot/mvc/demosecurity/controller/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-spring-mvc-security-custom-login-form/src/main/java/com/springboot/mvc/demosecurity/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-spring-mvc-security-custom-login-form/src/main/java/com/springboot/mvc/demosecurity/security/DemoSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-spring-mvc-security-custom-login-form/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-spring-mvc-security-custom-login-form/src/main/resources/static/images/image1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-spring-mvc-security-custom-login-form/src/main/resources/static/images/image2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-spring-mvc-security-custom-login-form/src/main/resources/static/images/image3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-spring-mvc-security-custom-login-form/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-spring-mvc-security-custom-login-form/src/main/resources/templates/plain-login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03-spring-boot-spring-mvc-security-custom-login-form/src/test/java/com/springboot/mvc/demosecurity/DemoSecurityApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoSecurity/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../01-spring-boot-spring-mvc-security-default/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoSecurity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01-spring-boot-spring-mvc-security-default/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoSecurity/src/main/java/com/springboot/mvc/demosecurity/DemoSecurityApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../01-spring-boot-spring-mvc-security-default/src/main/java/com/springboot/mvc/demosecurity/DemoSecurityApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoSecurity/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../01-spring-boot-spring-mvc-security-default/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demoSecurity/src/test/java/com/springboot/mvc/demosecurity/DemoSecurityApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../01-spring-boot-spring-mvc-security-default/src/test/java/com/springboot/mvc/demosecurity/DemoSecurityApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2dLj46FifA8fCWlUcGiOeBR3HeK" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.DemoSecurityApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/HP/Spring_Boot/08-spring-boot-spring-mvc-security/04-spring-boot-spring-mvc-security-custom-login-form -error-message",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\Spring_Boot\08-spring-boot-spring-mvc-security\03-spring-boot-spring-mvc-security-custom-login-form\src\main\resources\static\css" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="DemoSecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="demoSecurity" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.springboot.mvc.demosecurity.DemoSecurityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="91112c87-adc5-4073-a31a-746328c736b4" name="Changes" comment="" />
+      <created>1709794061879</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709794061879</updated>
+      <workItem from="1709794063041" duration="440000" />
+      <workItem from="1709794582535" duration="3425000" />
+      <workItem from="1709801176265" duration="623000" />
+      <workItem from="1709803983630" duration="3584000" />
+      <workItem from="1709807881576" duration="527000" />
+      <workItem from="1709810143475" duration="242000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
