@@ -1,12 +1,32 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html>
+
 <head>
-    <title>Thymeleaf Demo</title>
-    <!-----reference css file--->
-    <link rel="stylesheet" th:href="@{/css/demo.css}">
+    <title>Your Title</title>
+    <style>
+        /* CSS styles for the header */
+        header {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* CSS styles for the content */
+        main {
+            padding: 20px;
+        }
+    </style>
 </head>
+
 <body>
-<p th:text="'Time on the server is: '+ ${TheDate} " class="funny"></p>
+    <header>
+        <h1>Your Header</h1>
+    </header>
+
+    <main>
+        <h2>Your Content</h2>
+        <p>This is an example of a custom HTML document with a header and content.</p>
+    </main>
 </body>
 
 </html>
