@@ -23,18 +23,23 @@
 </p>
 
 
-<hr>
-<!--Add a link to point to /leaders -------- This is for managers-->
-<p>
-    <a th:href="@{/leaders}">Leadership Meeting</a>
-    (Only for manager peeps)
-</p>
 
-<!--Add a link to point to /systems.....this is for the admins-->
-<p>
-    <a th:href="@{/systems}">IT Systems Meeting</a>
-    (Only for Admin peeps)
-</p>
+<div sec:authorize="hasRole('MANAGER')">
+    <!--Add a link to point to /leaders -------- This is for managers-->
+    <p>
+        <a th:href="@{/leaders}">Leadership Meeting</a>
+        (Only for manager peeps)
+    </p>
+</div>
+
+<div sec:authorize="hasRole('ADMIN')">
+    <!--Add a link to point to /systems.....this is for the admins-->
+
+    <p>
+        <a th:href="@{/systems}">IT Systems Meeting</a>
+        (Only for Admin peeps)
+    </p>
+</div>
 
 <hr>
 
