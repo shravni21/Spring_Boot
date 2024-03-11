@@ -29,9 +29,10 @@ public class DemoApplication {
     }
 
     private void deleteInstructorDetail(AppDAO appDAO) {
-        int theId = 1;
-        System.out.println("Deleting the instructor detail id" + theId);
-        appDAO.deleteInstructorById(theId);
+        int theId = 3;
+        System.out.println("Deleting the instructor detail id " + theId);
+
+        appDAO.deleteInstructorDetailById(theId);
         System.out.println("Done!");
     }
 
