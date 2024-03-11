@@ -19,18 +19,50 @@ public class DemoApplication {
     public CommandLineRunner commandLineRunner(AppDAO appDAO) {
 
         return runner -> {
-            //createInstructor(appDAO);
-            FindInstructor(appDAO);
+//            createInstructor(appDAO);
+//            findInstructor(appDAO);
+//            deleteInstructor(appDAO);
+//            findInstructorDetail(appDAO);
+            deleteInstructorDetail(appDAO);
         };
+
     }
 
-    private void FindInstructor(AppDAO appDAO) {
+    private void deleteInstructorDetail(AppDAO appDAO) {
         int theId = 1;
-        System.out.println("Finding the instructor of id: " + theId);
-        Instructor tempInstructor = appDAO.findInstructorById(theId);
+        System.out.println("Deleting the instructor detail id" + theId);
+        appDAO.deleteInstructorById(theId);
+        System.out.println("Done!");
+    }
 
-        System.out.println("tempInstructor: " + tempInstructor);
-        System.out.println("the associate instructorDetail only: " + tempInstructor.getInstructorDetail());
+    private void findInstructorDetail(AppDAO appDAO) {
+
+        // get the instructor detail object
+        int theId = 1;
+        InstructorDetail tempInstructorDetail = appDAO.findInstructorDetailById(theId);
+
+        // print the instructor
+        System.out.println("TempInstructorDetail: " + tempInstructorDetail);
+
+        // print the associated instructor
+        System.out.println("The associated instructor: " + tempInstructorDetail.getInstructor());
+
+        System.out.println("Done!");
+    }
+
+    private void deleteInstructor(AppDAO appDAO) {
+        int theId = 2;
+        System.out.println("Deleting instructor id: " + theId);
+        appDAO.deleteInstructorById(theId);
+        System.out.println("Deleted!");
+    }
+
+    private void findInstructor(AppDAO appDAO) {
+        int theId = 2;
+        System.out.println("finding instructor id: " + theId);
+        Instructor tempInstructor = appDAO.findInstructorById(theId);
+        System.out.println("Temp instructor: " + tempInstructor);
+        System.out.println("The associated instructorDetail only: " + tempInstructor.getInstructorDetail());
     }
 
     private void createInstructor(AppDAO appDAO) {
