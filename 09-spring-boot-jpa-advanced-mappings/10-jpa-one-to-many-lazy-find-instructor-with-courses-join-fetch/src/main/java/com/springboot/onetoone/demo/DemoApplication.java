@@ -29,10 +29,24 @@ public class DemoApplication {
 //            deleteInstructorDetail(appDAO);
 //            createInstructorWithCourses(appDAO);
 //            findInstructorWithCourses(appDAO);
-            findCoursesForInstructor(appDAO);
+//            findCoursesForInstructor(appDAO);
+            findInstructorWithCoursesJoinFetch(appDAO);
         };
 
+    }
 
+    private void findInstructorWithCoursesJoinFetch(AppDAO appDAO) {
+        int theid = 1;
+
+        // find the instructor
+        System.out.println("Finding the instructor id: " + theid);
+
+        Instructor tempInstructor = appDAO.findInstructorByIdJoinFetch(theid);
+
+        System.out.println("TempInstructor: " + tempInstructor);
+        System.out.println("The associated courses: " + tempInstructor.getCourses());
+
+        System.out.println("Done!");
     }
 
     private void findCoursesForInstructor(AppDAO appDAO) {
