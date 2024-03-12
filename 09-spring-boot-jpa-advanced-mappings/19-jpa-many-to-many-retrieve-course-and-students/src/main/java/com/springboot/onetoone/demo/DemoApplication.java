@@ -21,6 +21,7 @@ public class DemoApplication {
 
         return runner -> {
 //            createCourseAndStudents(appDAO);
+            // find course and students
             findCourseAndStudents(appDAO);
 
         };
