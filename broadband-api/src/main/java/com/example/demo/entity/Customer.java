@@ -4,27 +4,28 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "customer")
-    public class Customer {
-        @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        @Column(name = "id")
-        private Integer id;
+public class Customer {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private Integer id;
 
-        @Column(name = "name", length = 45)
-        private String name;
+    @Column(name = "name", length = 45)
+    private String name;
 
-        @Column(name = "address", length = 128)
-        private String address;
+    @Column(name = "address", length = 128)
+    private String address;
 
-        @Column(name = "contact_number", length = 45)
-        private String contactNumber;
+    @Column(name = "contact_number", length = 45)
+    private String contactNumber;
 
     @ManyToOne
     @JoinColumn(name = "broadband_connection_id")
     private Broadband broadbandConnection;
 
-        public Customer() {
-        }
+    // constructors
+    public Customer() {
+    }
 
     public Customer(String name, String address, String contactNumber, Broadband broadbandConnection) {
         this.name = name;
@@ -33,6 +34,7 @@ import jakarta.persistence.*;
         this.broadbandConnection = broadbandConnection;
     }
 
+    // getter setters
     public Integer getId() {
         return id;
     }
@@ -73,6 +75,7 @@ import jakarta.persistence.*;
         this.broadbandConnection = broadbandConnection;
     }
 
+    // tostring
     @Override
     public String toString() {
         return "Customer{" +

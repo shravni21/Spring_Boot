@@ -20,7 +20,6 @@ public class Broadband {
     // Constructors
 
     public Broadband() {
-        // Default constructor required by JPA
     }
 
     public Broadband(String providerName, Plan plan) {
@@ -54,6 +53,7 @@ public class Broadband {
         this.plan = plan;
     }
 
+    // tostring
     @Override
     public String toString() {
         return "Broadband{" +

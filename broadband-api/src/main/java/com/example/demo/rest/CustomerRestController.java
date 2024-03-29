@@ -12,16 +12,19 @@ import java.util.List;
 public class CustomerRestController {
     private final CustomerService customerService;
 
+    // inject customer dao (use constructor injection)
     @Autowired
     public CustomerRestController(CustomerService customerService) {
         this.customerService = customerService;
     }
 
+    // expose "/customers" and return a list of customers
     @GetMapping("/customers")
     public List<Customer> getAllCustomers() {
         return customerService.getAllCustomers();
     }
 
+    // Add mapping for post
     @GetMapping("/customers/{id}")
     public Customer getCustomerById(@PathVariable Integer id) {
         Customer customer = customerService.getCustomerById(id);
@@ -31,11 +34,14 @@ public class CustomerRestController {
         return customer;
     }
 
+    // Add mapping for get by id
     @PostMapping("/customers")
     public Customer saveCustomer(@RequestBody Customer customer) {
-//        customer.setId(0);
+        // customer.setId(0);
         return customerService.saveCustomer(customer);
     }
+
+    // Add mapping for update
     @PutMapping("/customers/{id}")
     public Customer updateCustomer(@PathVariable Integer id, @RequestBody Customer customer) {
         Customer existingCustomer = customerService.getCustomerById(id);
@@ -43,16 +49,14 @@ public class CustomerRestController {
             throw new RuntimeException("Customer not found with id: " + id);
         }
 
-        // Update the existing customer object with the new values
+        // Update the existing customer object
         existingCustomer.setName(customer.getName());
         existingCustomer.setAddress(customer.getAddress());
         existingCustomer.setContactNumber(customer.getContactNumber());
         existingCustomer.setBroadbandConnection(customer.getBroadbandConnection());
 
-        // Save the updated customer object
         return customerService.saveCustomer(existingCustomer);
     }
-
 
     @DeleteMapping("/customers/{id}")
     public String deleteCustomer(@PathVariable Integer id) {
@@ -64,4 +68,3 @@ public class CustomerRestController {
         return "Deleted customer with id: " + id;
     }
 }
-
