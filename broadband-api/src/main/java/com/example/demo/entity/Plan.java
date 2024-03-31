@@ -54,8 +54,7 @@ public class Plan {
         this.amount = amount;
     }
 
-<<<<<<< HEAD
-=======
+
     // tostring
     @Override
     public String toString() {
@@ -66,5 +65,5 @@ public class Plan {
                 ", amount=" + amount +
                 '}';
     }
->>>>>>> ff9a21666a1a09b941168e34b7a4ebccabf16e89
+
 }
