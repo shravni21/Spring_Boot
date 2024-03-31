@@ -1,7 +1,8 @@
-package com.example.demo.service;
+package com.example.demo.service.service_Impl;
 
 import com.example.demo.dao.CustomerRepository;
 import com.example.demo.entity.Customer;
+import com.example.demo.service.service_interface.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 

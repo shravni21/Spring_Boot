@@ -55,13 +55,4 @@ public class Plan {
         this.amount = amount;
     }
 
-    @Override
-    public String toString() {
-        return "Plan{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", duration=" + duration +
-                ", amount=" + amount +
-                '}';
-    }
 }

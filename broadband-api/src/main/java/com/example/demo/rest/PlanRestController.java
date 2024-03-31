@@ -1,7 +1,7 @@
 package com.example.demo.rest;
 
 import com.example.demo.entity.Plan;
-import com.example.demo.service.PlanService;
+import com.example.demo.service.service_interface.PlanService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

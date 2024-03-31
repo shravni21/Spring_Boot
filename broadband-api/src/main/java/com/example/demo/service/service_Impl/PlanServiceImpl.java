@@ -1,13 +1,14 @@
-package com.example.demo.service;
+package com.example.demo.service.service_Impl;
 
 import com.example.demo.dao.PlanRepository;
 import com.example.demo.entity.Plan;
+import com.example.demo.service.service_interface.PlanService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class PlanServiceImpl implements  PlanService{
+public class PlanServiceImpl implements PlanService {
 
     private final PlanRepository planRepository;
 

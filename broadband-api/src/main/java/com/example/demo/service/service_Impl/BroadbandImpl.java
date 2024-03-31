@@ -1,8 +1,8 @@
-package com.example.demo.service;
+package com.example.demo.service.service_Impl;
 
 import com.example.demo.dao.BroadbandRepository;
 import com.example.demo.entity.Broadband;
-import jakarta.transaction.Transactional;
+import com.example.demo.service.service_interface.BroadbandService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

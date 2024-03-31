@@ -1,4 +1,4 @@
-package com.example.demo.service;
+package com.example.demo.service.service_interface;
 
 import com.example.demo.entity.Plan;
 
