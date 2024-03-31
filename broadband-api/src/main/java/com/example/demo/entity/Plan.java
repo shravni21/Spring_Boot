@@ -21,8 +21,7 @@ public class Plan {
     @Column(name = "amount", precision = 10, scale = 2)
     private BigDecimal amount;
 
-    // Getters and Setters
-
+    // getter setters
     public int getId() {
         return id;
     }
@@ -55,4 +54,17 @@ public class Plan {
         this.amount = amount;
     }
 
+<<<<<<< HEAD
+=======
+    // tostring
+    @Override
+    public String toString() {
+        return "Plan{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", duration=" + duration +
+                ", amount=" + amount +
+                '}';
+    }
+>>>>>>> ff9a21666a1a09b941168e34b7a4ebccabf16e89
 }

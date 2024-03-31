@@ -12,16 +12,19 @@ import java.util.List;
 public class PlanRestController {
     private final PlanService planService;
 
+    // inject plan dao (use constructor injection)
     @Autowired
     public PlanRestController(PlanService planService) {
         this.planService = planService;
     }
 
+    // expose "/plans" and return a list of plans
     @GetMapping("/plans")
     public List<Plan> getAllPlans() {
         return planService.getAllPlans();
     }
 
+    // Add mapping for get by ID
     @GetMapping("/plans/{id}")
     public Plan getPlanById(@PathVariable int id) {
         Plan plan = planService.getPlanById(id);
@@ -31,12 +34,14 @@ public class PlanRestController {
         return plan;
     }
 
+    // Add mapping for post
     @PostMapping("/plans")
     public Plan savePlan(@RequestBody Plan plan) {
-//        plan.setId(0);
+        // plan.setId(0);
         return planService.savePlan(plan);
     }
 
+    // Add mapping for update
     @PutMapping("/plans/{id}")
     public Plan updatePlan(@PathVariable int id, @RequestBody Plan updatedPlan) {
         Plan existingPlan = planService.getPlanById(id);
@@ -49,11 +54,10 @@ public class PlanRestController {
         existingPlan.setDuration(updatedPlan.getDuration());
         existingPlan.setAmount(updatedPlan.getAmount());
 
-        // Save the updated plan object
         return planService.savePlan(existingPlan);
     }
 
-
+    // Add mapping for DELETE
     @DeleteMapping("/plans/{id}")
     public String deletePlan(@PathVariable int id) {
         Plan plan = planService.getPlanById(id);
