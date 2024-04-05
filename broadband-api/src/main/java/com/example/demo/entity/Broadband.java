@@ -1,16 +1,17 @@
 package com.example.demo.entity;
 
 import jakarta.persistence.*;
+import java.math.BigDecimal;
 
 @Entity
 @Table(name = "broadband")
 public class Broadband {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "connectionId")
+    @Column(name = "connection_id")
     private Integer connectionId;
 
-    @Column(name = "providerName")
+    @Column(name = "provider_name", length = 45)
     private String providerName;
 
     @ManyToOne
@@ -53,7 +54,8 @@ public class Broadband {
         this.plan = plan;
     }
 
-    // tostring
+    // toString
+
     @Override
     public String toString() {
         return "Broadband{" +
@@ -62,5 +64,4 @@ public class Broadband {
                 ", plan=" + plan +
                 '}';
     }
-
 }

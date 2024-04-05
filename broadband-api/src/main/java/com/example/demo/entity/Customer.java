@@ -1,6 +1,8 @@
 package com.example.demo.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "customer")
@@ -11,19 +13,24 @@ public class Customer {
     private Integer id;
 
     @Column(name = "name", length = 45)
+    @NotNull
+    @Size(min = 2, max = 45)
     private String name;
 
     @Column(name = "address", length = 128)
+    @Size(max = 128)
     private String address;
 
     @Column(name = "contact_number", length = 45)
+    @Size(max = 45)
     private String contactNumber;
 
     @ManyToOne
     @JoinColumn(name = "broadband_connection_id")
     private Broadband broadbandConnection;
 
-    // constructors
+    // Constructors
+
     public Customer() {
     }
 
@@ -34,7 +41,8 @@ public class Customer {
         this.broadbandConnection = broadbandConnection;
     }
 
-    // getter setters
+    // Getters and Setters
+
     public Integer getId() {
         return id;
     }
@@ -75,7 +83,8 @@ public class Customer {
         this.broadbandConnection = broadbandConnection;
     }
 
-    // tostring
+    // toString
+
     @Override
     public String toString() {
         return "Customer{" +
@@ -86,5 +95,4 @@ public class Customer {
                 ", broadbandConnection=" + broadbandConnection +
                 '}';
     }
-
 }

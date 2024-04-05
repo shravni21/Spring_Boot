@@ -1,7 +1,10 @@
 package com.example.demo.entity;
 
 import jakarta.persistence.*;
-
+import jakarta.validation.constraints.DecimalMax;
+import jakarta.validation.constraints.DecimalMin;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import java.math.BigDecimal;
 
 @Entity
@@ -13,15 +16,20 @@ public class Plan {
     private int id;
 
     @Column(name = "name", length = 45)
+    @NotNull
+    @Size(min = 2, max = 45)
     private String name;
 
     @Column(name = "duration")
     private int duration;
 
     @Column(name = "amount", precision = 10, scale = 2)
+    @DecimalMin(value = "0.00", inclusive = false)
+    @DecimalMax(value = "999999.99")
     private BigDecimal amount;
 
-    // getter setters
+    // Getters and Setters
+
     public int getId() {
         return id;
     }
@@ -54,8 +62,8 @@ public class Plan {
         this.amount = amount;
     }
 
+    // toString
 
-    // tostring
     @Override
     public String toString() {
         return "Plan{" +
@@ -65,5 +73,4 @@ public class Plan {
                 ", amount=" + amount +
                 '}';
     }
-
 }
